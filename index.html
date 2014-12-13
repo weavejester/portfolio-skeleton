@@ -14,15 +14,20 @@
       <h1>Gallery</h1>
     </header>
     <article>
-      <ul id="gallery">
-        <li><img src="http://placehold.it/200x150/09f/fff"></li>
-        <li><img src="http://placehold.it/200x200/0f9/fff"></li>
-        <li><img src="http://placehold.it/400x300/f90/fff"></li>
-        <li><img src="http://placehold.it/200x150/f09/fff"></li>
-      </ul>
+      <section id="profile">
+        <p>About the author</p>
+      </section>
+      <section id="gallery">
+        <ul>
+          <li><img src="http://placehold.it/200x150/09f/fff"></li>
+          <li><img src="http://placehold.it/200x200/0f9/fff"></li>
+          <li><img src="http://placehold.it/400x300/f90/fff"></li>
+          <li><img src="http://placehold.it/200x150/f09/fff"></li>
+        </ul>
+      </section>
     </article>
     <script type="text/javascript">
-      var gallery = document.querySelector('#gallery');
+      var gallery = document.querySelector('#gallery ul');
       var masonry;
       imagesLoaded(gallery, function() {
         masonry = new Masonry(gallery, {

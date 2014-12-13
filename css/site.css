@@ -9,7 +9,11 @@ h1 {
     font-weight: 300;
 }
 
-#gallery {
+section {
+    margin-bottom: 40px;
+}
+
+#gallery ul {
     list-style-type: none;
     margin: auto;
     padding: 1px;
@@ -19,6 +23,6 @@ h1 {
     margin-bottom: 1px;
 }
 
-#gallery li img {
+#gallery img {
     display: block;
 }
