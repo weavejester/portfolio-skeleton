@@ -3,8 +3,26 @@
   <head>
     <title>Gallery</title>
     <link href="css/normalize.min.css" rel="stylesheet" type="text/css">
+    <script src="js/masonry.pkgd.min.js" type="text/javascript"></script>
+    <script src="js/imagesloaded.pkgd.min.js" type="text/javascript"></script>
   </head>
   <body>
-    <h1>Gallery</h1>
+    <header>
+      <h1>Gallery</h1>
+    </header>
+    <article>
+      <ul id="gallery">
+        <li><img src="http://placehold.it/250x150/09f/fff"></li>
+        <li><img src="http://placehold.it/200x200/0f9/fff"></li>
+        <li><img src="http://placehold.it/400x300/f90/fff"></li>
+      </ul>
+    </article>
+    <script type="text/javascript">
+      var gallery = document.querySelector('#gallery');
+      var masonry;
+      imagesLoaded(gallery, function() {
+        masonry = new Masonry(gallery);
+      });
+    </script>
   </body>
 </html>
