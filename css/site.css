@@ -1,0 +1,13 @@
+#gallery {
+    list-style-type: none;
+    margin: 0;
+    padding: 1px;
+}
+
+#gallery li {
+    margin-bottom: 1px;
+}
+
+#gallery li img {
+    display: block;
+}
