@@ -23,7 +23,10 @@
       var gallery = document.querySelector('#gallery');
       var masonry;
       imagesLoaded(gallery, function() {
-        masonry = new Masonry(gallery, {gutter: 1});
+        masonry = new Masonry(gallery, {
+          gutter: 1,
+          transitionDuration: 0
+        });
       });
     </script>
   </body>

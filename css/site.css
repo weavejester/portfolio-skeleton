@@ -1,6 +1,11 @@
+body {
+    max-width: 810px;
+    margin: auto;
+}
+
 #gallery {
     list-style-type: none;
-    margin: 0;
+    margin: auto;
     padding: 1px;
 }
 
