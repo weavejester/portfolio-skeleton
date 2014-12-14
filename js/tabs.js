@@ -5,10 +5,12 @@ var Tabs = function(options) {
     
     this.change = function(target) {
         $(this.pages).hide();
-        $(this.pages).filter(target).show();
-        $(this.links).removeClass('target');
-        $(this.links).filter('[href="' + target + '"]').addClass('target');
-        this.onChange({target: target});
+        $(target).show();
+        $(this.links).
+            removeClass('target').
+            filter('[href="#' + $(target).attr('id') + '"]').
+            addClass('target');
+        this.onChange({target: $(target)});
     }
 
     this.change(options.defaultPage || pages.first());
