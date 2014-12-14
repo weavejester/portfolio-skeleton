@@ -10,8 +10,9 @@ header {
     padding-bottom: 0;
 }
 
-header h1, nav, section {
-    max-width: 810px;
+header h1, nav, #sections {
+    max-width: 840px;
+    padding: 0 20px;
 }
 
 h1 {
