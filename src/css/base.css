@@ -32,7 +32,7 @@ section {
     float: left;
 }
 
-#portfolio img {
+#portfolio a, #portfolio img {
     display: block;
 }
 
