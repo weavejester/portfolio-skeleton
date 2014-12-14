@@ -1,19 +1,4 @@
-#viewport {
-    width: 100%;
-    overflow-x: hidden;
-}
-
-#sections {
-    width: 200%;
-}
-
-section {
-    float: left;
-    width: 50%;
-    margin-bottom: 40px;
-}
-
-header, nav, article {
+header, nav, section {
     max-width: 810px;
     margin: auto;
 }
@@ -41,6 +26,10 @@ nav ul {
 
 nav li {
     display: inline-block;
+}
+
+section {
+    margin-bottom: 40px;
 }
 
 #gallery ul {

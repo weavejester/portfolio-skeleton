@@ -20,29 +20,40 @@
         <li><a href="#gallery">Gallery</a></li>
       </ul>
     </nav>
-    <div id="viewport">
-      <div id="sections">
-        <section id="about">
-          <article>
-            <p>About the author</p>
-          </article>
-        </section>
-        <section id="gallery">
-          <article>
-            <ul>
-              <li><img src="http://placehold.it/200x150/09f/fff"></li>
-              <li><img src="http://placehold.it/200x200/0f9/fff"></li>
-              <li><img src="http://placehold.it/400x300/f90/fff"></li>
-              <li><img src="http://placehold.it/200x150/f09/fff"></li>
-            </ul>
-          </article>
-        </section>
-      </div>
+    <div id="sections">
+      <section id="about">
+        <article>
+          <p>About the author</p>
+        </article>
+      </section>
+      <section id="gallery">
+        <article>
+          <ul>
+            <li><img src="http://placehold.it/200x150/09f/fff"></li>
+            <li><img src="http://placehold.it/200x200/0f9/fff"></li>
+            <li><img src="http://placehold.it/400x300/f90/fff"></li>
+            <li><img src="http://placehold.it/200x150/f09/fff"></li>
+          </ul>
+        </article>
+      </section>
     </div>
     <script type="text/javascript">
-      var $gallery = $('#gallery ul');
-      $gallery.imagesLoaded(function() {
-        $gallery.masonry({gutter: 1, transitionDuration: 0});
+      var gallery = document.querySelector('#gallery ul');
+      var masonry = new Masonry(gallery, {gutter: 1, transitionDuration: 0});
+
+      imagesLoaded(gallery, function() { masonry.layout(); });
+
+      var changeSection = function(section) {
+        $('section').hide();
+        $(section).show();
+        masonry.layout();
+      }
+
+      changeSection('#gallery');
+
+      $('a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
+        changeSection(e.target.hash);
       });
     </script>
   </body>
