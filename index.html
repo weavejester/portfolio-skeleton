@@ -39,10 +39,10 @@
       </section>
     </div>
     <script type="text/javascript">
-      var gallery = document.querySelector('#gallery ul');
-      var masonry = new Masonry(gallery, {gutter: 1, transitionDuration: 0});
+      var gallery = $('#gallery ul');
+      var masonry = new Masonry(gallery[0], {gutter: 1, transitionDuration: 0});
 
-      imagesLoaded(gallery, function() { masonry.layout(); });
+      gallery.imagesLoaded(function() { masonry.layout(); });
 
       var tabs = new Tabs({
         links:       $('nav a'),
