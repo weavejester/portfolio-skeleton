@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Gallery</title>
+    <title>Title</title>
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300"
           rel="stylesheet" type="text/css">
     <link href="css/normalize.min.css" rel="stylesheet" type="text/css">
@@ -12,12 +12,12 @@
   </head>
   <body>
     <header>
-      <h1>Gallery</h1>
+      <h1>Title</h1>
     </header>
     <nav>
       <ul>
         <li><a href="#about">About me</a></li>
-        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#gallery">Portfolio</a></li>
       </ul>
     </nav>
     <div id="sections">
@@ -46,6 +46,8 @@
       var changeSection = function(section) {
         $('section').hide();
         $(section).show();
+        $('a[href^="#"]').removeClass('target');
+        $('a[href="' + section + '"]').addClass('target')
         masonry.layout();
       }
 

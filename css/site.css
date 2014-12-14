@@ -14,10 +14,6 @@ p {
     margin-top: 0;
 }
 
-nav {
-    margin-bottom: 25px;
-}
-
 nav ul {
     margin: 0;
     padding: 0;
@@ -25,11 +21,30 @@ nav ul {
 }
 
 nav li {
-    display: inline-block;
+    display: block;
+    float: left;
+    margin: 0;
+    width: 100px;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    display: block;
+    margin-right: 1px;
+    background: #eeeeee;
+    color: #000000;
+    padding: 10px;
+}
+
+nav a.target {
+    background: #fc3c76;
+    color: #ffffff
 }
 
 section {
-    margin-bottom: 40px;
+    clear: both;
+    padding: 20px 0;
 }
 
 #gallery ul {
