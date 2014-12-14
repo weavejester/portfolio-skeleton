@@ -1,3 +1,7 @@
+body {
+    color: #333333;
+}
+
 header, nav, section {
     max-width: 810px;
     margin: auto;
@@ -12,6 +16,8 @@ h1 {
 
 p {
     margin-top: 0;
+    text-align: justify;
+    text-indent: 0em;
 }
 
 nav ul {
@@ -47,16 +53,23 @@ section {
     padding: 20px 0;
 }
 
-#gallery ul {
+#profile img {
+    display: block;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+#portfolio ul {
     list-style-type: none;
     margin: auto;
     padding: 1px;
 }
 
-#gallery li {
+#portfolio li {
     margin-bottom: 1px;
 }
 
-#gallery img {
+#portfolio img {
     display: block;
 }

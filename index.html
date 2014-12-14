@@ -17,17 +17,37 @@
     </header>
     <nav>
       <ul>
-        <li><a href="#about">About me</a></li>
-        <li><a href="#gallery">Portfolio</a></li>
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
       </ul>
     </nav>
     <div id="sections">
-      <section id="about">
+      <section id="profile">
         <article>
-          <p>About the author</p>
+          <img src="http://placehold.it/200x300/fd5/000&text=profile+pic">
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+          elit. Phasellus consequat ligula ac mi pellentesque, at
+          tempor elit iaculis. Maecenas ut turpis finibus, convallis
+          ligula id, molestie nibh. Mauris vel metus a quam convallis
+          ultricies non sit amet ante. Nulla ac lorem a quam faucibus
+          sollicitudin. Nunc vulputate enim quis ex rutrum
+          rhoncus. Fusce nec mi pharetra, interdum augue vel,
+          efficitur urna.</p>
+
+          <p>Mauris quam orci, varius non vestibulum ac, porta eu
+          turpis. Nam ultrices, ligula a rhoncus euismod, velit urna
+          malesuada tortor, vel sodales odio sapien maximus nunc. Ut
+          malesuada semper leo. Nam ac malesuada risus. Proin commodo
+          lobortis massa ut accumsan. Vivamus ac feugiat
+          ipsum. Aliquam in porta ligula, eget tempus elit.</p>
+
+          <p>Class aptent taciti sociosqu ad litora torquent per
+          conubia nostra, per inceptos himenaeos. Sed sit amet massa
+          non nisl semper tincidunt quis sit amet lectus.</p>
         </article>
       </section>
-      <section id="gallery">
+      <section id="portfolio">
         <article>
           <ul>
             <li><img src="http://placehold.it/200x150/09f/fff"></li>
@@ -39,7 +59,7 @@
       </section>
     </div>
     <script type="text/javascript">
-      var gallery = $('#gallery ul');
+      var gallery = $('#portfolio ul');
       var masonry = new Masonry(gallery[0], {gutter: 1, transitionDuration: 0});
 
       gallery.imagesLoaded(function() { masonry.layout(); });
@@ -47,7 +67,7 @@
       var tabs = new Tabs({
         links:       $('nav a'),
         pages:       $('section'),
-        defaultPage: $('#gallery'),
+        defaultPage: $('#portfolio'),
         onChange:    function(e) { masonry.layout(); }
       });
    </script>
