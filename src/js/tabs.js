@@ -15,13 +15,13 @@ var Tabs = function(options) {
 
     var slideOut = function(element) {
         return $(element)
-            .transition({opacity: 0, x: '50px'})
+            .transition({opacity: 0, x: '10%'}, 300)
             .queue(function() { $(this).hide().dequeue(); });
     };
 
     var slideIn = function(element) {
         $(element)
-            .css({opacity: 0, transform: 'translate(50px, 0px)'})
+            .css({opacity: 0, transform: 'translate(10%, 0px)'}, 300)
             .show();
         tabs.onChange({target: $(element)});
         return $(element)
