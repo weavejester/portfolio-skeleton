@@ -1,8 +1,10 @@
 var Tabs = function(options) {
+    var pageHash = document.location.hash == '' ? null : document.location.hash;
+
     this.links = options.links;
     this.pages = options.pages;
     this.onChange    = options.onChange || function() {};
-    this.defaultPage = options.defaultPage || pages.first();
+    this.defaultPage = pageHash || options.defaultPage || pages.first();
 
     var tabs = this;
 
@@ -40,7 +42,6 @@ var Tabs = function(options) {
     updateLinks(this.defaultPage);
     
     $(this.links).on('click', function(event) {
-        event.preventDefault();
         tabs.change(event.target.hash);
     });
 };
