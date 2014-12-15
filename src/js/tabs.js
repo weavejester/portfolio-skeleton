@@ -21,7 +21,7 @@ var Tabs = function(options) {
 
     var slideIn = function(element) {
         $(element)
-            .css({opacity: 0, transform: 'translate(10%, 0px)'}, 300)
+            .css({opacity: 0, x: '10%'}, 300)
             .show();
         tabs.onChange({target: $(element)});
         return $(element)
