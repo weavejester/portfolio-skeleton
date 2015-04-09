@@ -3,15 +3,14 @@ body {
     font-family: sans-serif;
 }
 
-header {
+header h1 {
     background: #bb33ee;
     color: #ffffff;
     height: 65px;
-    padding-top: 80px;
-    padding-bottom: 0;
+    padding: 60px 20px 0 20px;
 }
 
-header h1, nav, article {
+header, nav, article {
     max-width: 840px;
     padding: 0 20px;
 }

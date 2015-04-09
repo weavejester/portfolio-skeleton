@@ -2,7 +2,7 @@ header {
     width: 100%;
 }
 
-header h1, nav, article {
+header, nav, article {
     margin: auto;
 }
 
