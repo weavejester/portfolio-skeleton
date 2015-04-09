@@ -11,7 +11,7 @@ header {
     padding-bottom: 0;
 }
 
-header h1, nav, #sections {
+header h1, nav, article {
     max-width: 840px;
     padding: 0 20px;
 }
@@ -47,7 +47,7 @@ nav a.target {
     color: #ffffff
 }
 
-section {
+article {
     padding: 20px 0;
 }
 

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300"
+          rel="stylesheet" type="text/css">
+
+    <link href="css/normalize.min.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css">
+    <link href="css/base.css" rel="stylesheet" type="text/css">
+    <link href="css/site.css" rel="stylesheet" type="text/css">
+    
+    <script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="js/masonry.pkgd.min.js" type="text/javascript"></script>
+    <script src="js/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+    <script src="js/jquery.fancybox.pack.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Title</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Profile</a></li>
+        <li><a class="target" href="portfolio.html">Portfolio</a></li>
+      </ul>
+    </nav>
+    <article id="portfolio">
+      <ul>
+        <li>
+          <a href="http://placehold.it/600x450/09f/fff&text=big+picture.png">
+            <img src="http://placehold.it/200x150/09f/fff&text=thumbnail.png">
+          </a>
+        </li>
+        <li>
+          <a href="http://placehold.it/600x600/0f9/fff&text=big+picture.png">
+            <img src="http://placehold.it/200x200/0f9/fff&text=thumbnail.png">
+          </a>
+        </li>
+        <li>
+          <a href="http://placehold.it/1200x900/f90/fff&text=big+picture.png">
+            <img src="http://placehold.it/400x300/f90/fff&text=thumbnail.png">
+          </a>
+        </li>
+        <li>
+          <a href="http://placehold.it/600x450/f09/fff&text=big+picture.png">
+            <img src="http://placehold.it/200x150/f09/fff&text=thumbnail.png">
+          </a>
+        </li>
+      </ul>
+    </article>
+    <script type="text/javascript">
+      var gallery = $('#portfolio ul');
+      var masonry = new Masonry(gallery[0], {gutter: 1, transitionDuration: 0});
+
+      gallery.imagesLoaded(function() { masonry.layout(); });
+
+      $('#portfolio a').
+        attr('rel', 'gallery').
+        fancybox({
+          padding: 0,
+          openEffect: 'elastic',
+          closeEffect: 'elastic'
+        });
+   </script>
+  </body>
+</html>

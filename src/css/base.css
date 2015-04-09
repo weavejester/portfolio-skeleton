@@ -2,7 +2,7 @@ header {
     width: 100%;
 }
 
-header h1, nav, #sections {
+header h1, nav, article {
     margin: auto;
 }
 
@@ -23,7 +23,7 @@ nav ul li a {
     display: block;
 }
 
-section {
+article {
     clear: both;
 }
 
