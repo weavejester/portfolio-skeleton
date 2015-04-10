@@ -26,6 +26,15 @@ article {
     clear: both;
 }
 
+dl dt {
+    font-weight: bold;
+    margin: 0 0 5px 0;
+}
+
+dl dd {
+    margin: 0 0 20px 15px;
+}
+
 #profile img {
     display: block;
     float: left;
