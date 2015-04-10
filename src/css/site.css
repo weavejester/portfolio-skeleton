@@ -12,7 +12,6 @@ header h1 {
 
 header, nav, article {
     max-width: 840px;
-    padding: 0 20px;
 }
 
 h1 {
@@ -47,7 +46,7 @@ nav a.target {
 }
 
 article {
-    padding: 20px 0;
+    padding: 20px 20px;
 }
 
 #profile img {
