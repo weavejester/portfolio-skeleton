@@ -13,8 +13,7 @@ nav ul {
 }
 
 nav ul li {
-    display: block;
-    float: left;
+    display: inline-block;
     margin: 0;
     text-align: center;
 }

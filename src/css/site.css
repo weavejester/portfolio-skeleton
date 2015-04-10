@@ -28,6 +28,11 @@ p {
     line-height: 1.5em;
 }
 
+nav ul {
+    background: #eeeeee;
+    height: 35px;
+}
+
 nav li {
     width: 100px;
 }
@@ -36,13 +41,14 @@ nav a {
     text-decoration: none;
     margin-right: 1px;
     padding: 10px;
-    background: #eeeeee;
     color: #000000;
 }
 
 nav a.target {
     background: #fc3c76;
-    color: #ffffff
+    color: #ffffff;
+    height: 20px;
+    border-radius: 0 0 5px 5px;
 }
 
 article {
